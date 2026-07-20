@@ -1,172 +1,283 @@
+
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import { Phone, Mail, Clock3, Menu, ArrowRight } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  Clock3,
+  Menu,
+  ArrowRight,
+} from "lucide-react";
 
 export default function Home() {
   return (
-      <main className="bg-white">
+    <main className="bg-white">
 
-            {/* ================= TOP BAR ================= */}
+      {/* ================= TOP BAR ================= */}
 
-                  <div className="bg-[#F57C00] text-white text-sm">
-                          <div className="max-w-7xl mx-auto px-6 py-2 flex flex-wrap items-center justify-between gap-4">
+      <div className="bg-[#F57C00] text-white text-sm">
+        <div className="max-w-7xl mx-auto px-6 py-2 flex flex-wrap items-center justify-between gap-4">
 
-                                    <div className="flex flex-wrap items-center gap-6">
+          <div className="flex flex-wrap items-center gap-6">
 
-                                                <div className="flex items-center gap-2">
-                                                              <Clock3 size={16} />
-                                                                            <span>Mon - Sat : 9:00 AM - 6:30 PM</span>
-                                                                                        </div>
+            <div className="flex items-center gap-2">
+              <Clock3 size={16} />
+              <span>Mon - Sat : 9:00 AM - 6:30 PM</span>
+            </div>
 
-                                                                                                    <div className="flex items-center gap-2">
-                                                                                                                  <Mail size={16} />
-                                                                                                                                <span>i nfo@axisinfra.com</span>
-                                                                                                                                            </div>
+            <div className="flex items-center gap-2">
+              <Mail size={16} />
+              <span>info@axisinfra.com</span>
+            </div>
+
+          </div>
 
-                                                                                                                                                      </div>
+          <div className="flex items-center gap-2">
+            <Phone size={16} />
+            <span className="font-semibold">
+              +91 98765 43210
+            </span>
+          </div>
 
-                                                                                                                                                                <div className="flex items-center gap-2">
-                                                                                                                                                                            <Phone size={16} />
-                                                                                                                                                                                        <span className="font-semibold">+91 98765 43210</span>
-                                                                                                                                                                                                  </div>
+        </div>
+      </div>
 
-                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                                </div>
+      {/* ================= HERO SECTION ================= */}
 
-                                                                                                                                                                                                                      {/* ================= HERO ================= */}
+      <section
+        className="relative min-h-screen bg-cover bg-center pt-36"
+        style={{
+          backgroundImage:
+            "url('https://axisinfradesignteam.com/wp-content/uploads/2026/07/Blog-Banner-for-Website-Content_20260710_105446_0000.png')",
+        }}
+      >
+        {/* Overlay */}
 
-                                                                                                                                                                                                                            <section
-                                                                                                                                                                                                                                    className="relative h-screen bg-cover bg-center"
-                                                                                                                                                                                                                                            style={{
-                                                                                                                                                                                                                                                      backgroundImage:
-                                                                                                                                                                                                                                                                  "url('https://axisinfradesignteam.com/wp-content/uploads/2026/07/Blog-Banner-for-Website-Content_20260710_105446_0000.png')",
-                                                                                                                                                                                                                                                                          }}
-                                                                                                                                                                                                                                                                                >
-                                                                                                                                                                                                                                                                                        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-                                                                                                                                                                                                                                                                                                <div className="absolute inset-0 bg-black/55"></div>
+        {/* ================= HEADER ================= */}
 
-                                                                                                                                                                                                                                                                                                        {/* ================= NAVBAR ================= */}
+        <header className="fixed top-0 left-0 w-full z-[100]">
 
-                                                                                                                                                                                                                                                                                                                <header className="absolute top-0 left-0 w-full z-50">
+          <div className="max-w-7xl mx-auto px-6 pt-6">
 
-                                                                                                                                                                                                                                                                                                                          <div className="max-w-7xl mx-auto px-6 py-6">
+            <div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-full shadow-xl">
 
-                                                                                                                                                                                                                                                                                                                                      <div className="backdrop-blur-md bg-black/30 rounded-full border border-white/10">
+              <div className="flex items-center justify-between px-10 py-5">
 
-                                                                                                                                                                                                                                                                                                                                                    <div className="flex items-center justify-between px-8 py-4">
+                {/* LOGO */}
 
-                                                                                                                                                                                                                                                                                                                                                                    {/* Logo */}
+                <Link href="/" className="flex items-center">
 
-                                                                                                                                                                                                                                                                                                                                                                                    <Link href="/" className="flex items-center">
+                  <img
+                    src="https://axisinfradesignteam.com/wp-content/uploads/2026/07/1_20260710_121127_0000.png"
+                    alt="Axis Infra"
+                    className="h-14 w-auto"
+                  />
 
-                                                                                                                                                                                                                                                                                                                                          <img
-                                                                                                                                                                                                                                                                                                                                            src="https://axisinfradesignteam.com/wp-content/uploads/2026/07/1_20260710_121127_0000.png"
-                                                                                                                                                                                                                                                                                                                                              alt="Axis Infra"
-                                                                                                                                                                                                                                                                                                                                                className="h-14 w-auto"
-                                                                                                                                                                                                                                                                                                                                                />                              
+                </Link>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </Link>
+                {/* DESKTOP MENU */}
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {/* Desktop Menu */}
+                <nav className="hidden lg:flex items-center gap-10 text-white text-[16px] font-semibold">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <nav className="hidden lg:flex items-center gap-8 text-white font-medium">
+                  <Link
+                    href="/"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Home
+                  </Link>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <Link href="/">Home</Link>
+                  <Link
+                    href="/about"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    About
+                  </Link>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <Link href="/about">About</Link>
+                  <Link
+                    href="/architecture"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Architecture
+                  </Link>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <Link href="/services">Services</Link>
+                  <Link
+                    href="/services"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Services
+                  </Link>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <Link href="/projects">Projects</Link>
+                  <Link
+                    href="/projects"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Projects
+                  </Link>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <Link href="/contact">Contact</Link>
+                  <Link
+                    href="/founder"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Founder
+                  </Link>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </nav>
+                  <Link
+                    href="/contact"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Contact
+                  </Link>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {/* CTA */}
+                </nav>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <div className="hidden lg:block">
+                {/* RIGHT SIDE */}
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <button className="bg-[#F57C00] hover:bg-orange-600 transition px-6 py-3 rounded-full font-semibold text-white flex items-center gap-2">
+                <div className="flex items-center gap-4">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Get Quote
+                  <button className="hidden lg:flex bg-[#F57C00] hover:bg-orange-600 transition px-6 py-3 rounded-full font-semibold text-white items-center gap-2">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <ArrowRight size={18} />
+                    Get Quote
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </button>
+                    <ArrowRight size={18} />
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
+                  </button>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {/* Mobile */}
+                  {/* MOBILE MENU */}
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <button className="lg:hidden text-white">
+                  <button className="lg:hidden text-white">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <Menu size={30} />
+                    <Menu size={30} />
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </button>
+                  </button>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
+                </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
+              </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+            </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </header>
+          </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        {/* ================= HERO CONTENT ================= */}
+        </header>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div className="relative z-10 max-w-7xl mx-auto h-full px-6 flex items-center">
+        {/* ================= HERO CONTENT STARTS HERE ================= */}
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <div className="max-w-3xl">
+        <div className="relative z-20 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
+          
+                          <div className="max-w-3xl">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p className="uppercase tracking-[5px] text-[#F57C00] font-semibold mb-5">
+            <span className="inline-block bg-[#F57C00]/20 border border-[#F57C00] text-[#F57C00] px-5 py-2 rounded-full text-sm font-semibold tracking-widest uppercase">
+              Axis Infra Design Team
+            </span>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Welcome To Axis Infra
+            <h1 className="mt-8 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white">
+              Building Spaces
+              <br />
+              That Inspire
+            </h1>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </p>
+            <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-[#F57C00]">
+              Architecture • Interiors • Construction
+            </h2>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
+            <p className="mt-8 text-lg text-gray-200 leading-8 max-w-2xl">
+              We design premium residential, commercial and luxury interior
+              spaces with innovative architecture, quality construction and
+              timeless aesthetics. Every project is crafted with precision,
+              creativity and excellence.
+            </p>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Building <span className="text-[#F57C00]">Dream Spaces</span>
+            <div className="mt-10 flex flex-wrap gap-5">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <br />
+              <Link
+                href="/projects"
+                className="bg-[#F57C00] hover:bg-orange-600 transition px-8 py-4 rounded-full text-white font-semibold flex items-center gap-2"
+              >
+                View Projects
+                <ArrowRight size={20} />
+              </Link>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      With Excellence
+              <Link
+                href="/contact"
+                className="border border-white hover:bg-white hover:text-black transition px-8 py-4 rounded-full text-white font-semibold"
+              >
+                Contact Us
+              </Link>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </h1>
+            </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p className="text-gray-200 text-lg mt-8 leading-8 max-w-xl">
+            {/* Statistics */}
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Axis Infra delivers premium Architecture, Structural Design,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Building Permissions and Construction solutions with quality,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        innovation and trust.
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </p>
+              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div className="flex gap-5 mt-10">
+                <h3 className="text-4xl font-bold text-[#F57C00]">
+                  250+
+                </h3>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <button className="bg-[#F57C00] hover:bg-orange-600 px-8 py-4 rounded-full text-white font-semibold transition">
+                <p className="text-white mt-2">
+                  Projects Completed
+                </p>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Explore Services
+              </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </button>
+              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <button className="border border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition">
+                <h3 className="text-4xl font-bold text-[#F57C00]">
+                  12+
+                </h3>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Contact Us
+                <p className="text-white mt-2">
+                  Years Experience
+                </p>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </button>
+              </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
+                <h3 className="text-4xl font-bold text-[#F57C00]">
+                  100%
+                </h3>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
+                <p className="text-white mt-2">
+                  Quality Assurance
+                </p>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </section>
+              </div>
+
+              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
+
+                <h3 className="text-4xl font-bold text-[#F57C00]">
+                  24/7
+                </h3>
+
+                <p className="text-white mt-2">
+                  Client Support
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= ABOUT US STARTS HERE ================= */}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   {/* ================= ABOUT US ================= */}
 
