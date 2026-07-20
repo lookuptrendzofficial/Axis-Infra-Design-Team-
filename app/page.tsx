@@ -922,4 +922,141 @@ export default function Home() {
   </div>
 
 </section>
-      
+   {/* ================= FOOTER ================= */}
+
+<footer className="bg-[#0B0B0B] text-white pt-20 pb-8">
+
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+      {/* Company */}
+
+      <div>
+
+        <img
+          src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_000000008b7482089b081bbdce860ea8.png"
+          alt="Axis Infra Design Team"
+          className="h-20 mb-6"
+        />
+
+        <p className="text-gray-400 leading-8">
+
+          Axis Infra Design Team specializes in Architecture,
+          Interior Design, Planning and Construction with
+          innovative ideas, premium quality and timely delivery.
+
+        </p>
+
+      </div>
+
+      {/* Quick Links */}
+
+      <div>
+
+        <h3 className="text-xl font-bold mb-6">
+          Quick Links
+        </h3>
+
+        <ul className="space-y-4 text-gray-400">
+
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/about">About Us</Link></li>
+          <li><Link href="/services">Our Services</Link></li>
+          <li><Link href="/contact">Contact Us</Link></li>
+
+        </ul>
+
+      </div>
+
+      {/* Services */}
+
+      <div>
+
+        <h3 className="text-xl font-bold mb-6">
+          Our Services
+        </h3>
+
+        <ul className="space-y-4 text-gray-400">
+
+          <li>Architecture Design</li>
+          <li>Interior Design</li>
+          <li>Planning</li>
+          <li>Construction</li>
+          <li>Turnkey Projects</li>
+
+        </ul>
+
+      </div>
+
+      {/* Contact */}
+
+      <div>
+
+        <h3 className="text-xl font-bold mb-6">
+          Contact Info
+        </h3>
+
+        <div className="space-y-5 text-gray-400">
+
+          <p>📍 Visakhapatnam, Andhra Pradesh</p>
+
+          <p>📞 +91 98765 43210</p>
+
+          <p>✉ info@axisinfra.com</p>
+
+          <p>🕒 Mon - Sat : 9:00 AM - 6:30 PM</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* Bottom */}
+
+    <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+
+      <p className="text-gray-500 text-sm">
+
+        © {new Date().getFullYear()} Axis Infra Design Team. All Rights Reserved.
+
+      </p>
+
+      <div className="flex items-center gap-4">
+
+        <a
+          href="#"
+          className="w-11 h-11 rounded-full bg-white/10 hover:bg-[#F57C00] duration-300 flex items-center justify-center"
+        >
+          FB
+        </a>
+
+        <a
+          href="#"
+          className="w-11 h-11 rounded-full bg-white/10 hover:bg-[#F57C00] duration-300 flex items-center justify-center"
+        >
+          IG
+        </a>
+
+        <a
+          href="#"
+          className="w-11 h-11 rounded-full bg-white/10 hover:bg-[#F57C00] duration-300 flex items-center justify-center"
+        >
+          IN
+        </a>
+
+        <a
+          href="#"
+          className="w-11 h-11 rounded-full bg-white/10 hover:bg-[#F57C00] duration-300 flex items-center justify-center"
+        >
+          WA
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>   
