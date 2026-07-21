@@ -71,7 +71,7 @@ export default function Home() {
                 <Link href="/" className="flex items-center">
 
                   <img
-                    src="https://axisinfradesignteam.com/wp-content/uploads/2026/07/1_20260710_121127_0000.png"
+                    src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_000000008b7482089b081bbdce860ea8.png"
                     alt="Axis Infra"
                     className="h-14 w-auto"
                   />
