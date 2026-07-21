@@ -23,7 +23,7 @@ export default function Home() {
         className="relative min-h-screen bg-cover bg-center pt-36"
         style={{
           backgroundImage:
-            "url('https://axisinfradesignteam.com/wp-content/uploads/2026/07/Blog-Banner-for-Website-Content_20260710_105446_0000.png')",
+            "url('https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_00000000cae87208a5c541bdaced9bac.png')",
         }}
       >
         {/* Overlay */}
