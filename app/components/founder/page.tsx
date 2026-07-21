@@ -2,11 +2,6 @@
 
 import Link from "next/link";
 import {
-  ArrowRight,
-  Award,
-  Building2,
-} from "lucide-react";
-import {
   Phone,
   Mail,
   Clock3,
