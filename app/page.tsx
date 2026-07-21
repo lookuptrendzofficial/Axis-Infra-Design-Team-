@@ -45,7 +45,7 @@ export default function Home() {
                 <Link href="/" className="flex items-center">
 
                   <img
-                    src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_000000008b7482089b081bbdce860ea8.png"
+                    src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260721_134437_0000.png"
                     alt="Axis Infra"
                     className="h-14 w-auto"
                   />
@@ -139,107 +139,129 @@ export default function Home() {
 
         {/* ================= HERO CONTENT STARTS HERE ================= */}
 
-        <div className="relative z-20 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
-          
-                          <div className="max-w-3xl">
+        {/* ================= HERO CONTENT STARTS HERE ================= */}
 
-            <span className="inline-block bg-[#F57C00]/20 border border-[#F57C00] text-[#F57C00] px-5 py-2 rounded-full text-sm font-semibold tracking-widest uppercase">
-              Axis Infra Design Team
-            </span>
+<div className="relative z-20 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
 
-            <h1 className="mt-8 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white">
-              Building Spaces
-              <br />
-              That Inspire
-            </h1>
+  <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
 
-            <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-[#F57C00]">
-              Architecture • Interiors • Construction
-            </h2>
+    {/* ================= LEFT CONTENT ================= */}
 
-            <p className="mt-8 text-lg text-gray-200 leading-8 max-w-2xl">
-              We design premium residential, commercial and luxury interior
-              spaces with innovative architecture, quality construction and
-              timeless aesthetics. Every project is crafted with precision,
-              creativity and excellence.
-            </p>
+    <div>
 
-            <div className="mt-10 flex flex-wrap gap-5">
+      <span className="inline-block bg-[#F57C00]/20 border border-[#F57C00] text-[#F57C00] px-5 py-2 rounded-full text-sm font-semibold tracking-widest uppercase">
+        Axis Infra Design Team
+      </span>
 
-              <Link
-                href="/projects"
-                className="bg-[#F57C00] hover:bg-orange-600 transition px-8 py-4 rounded-full text-white font-semibold flex items-center gap-2"
-              >
-                View Projects
-                <ArrowRight size={20} />
-              </Link>
+      <h1 className="mt-8 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white">
+        Building Spaces
+        <br />
+        That Inspire
+      </h1>
 
-              <Link
-                href="/contact"
-                className="border border-white hover:bg-white hover:text-black transition px-8 py-4 rounded-full text-white font-semibold"
-              >
-                Contact Us
-              </Link>
+      <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-[#F57C00]">
+        Architecture • Interiors • Construction
+      </h2>
 
-            </div>
+      <p className="mt-8 text-lg text-gray-200 leading-8 max-w-2xl">
+        We design premium residential, commercial and luxury interior
+        spaces with innovative architecture, quality construction and
+        timeless aesthetics. Every project is crafted with precision,
+        creativity and excellence.
+      </p>
 
-            {/* Statistics */}
+      <div className="mt-10 flex flex-wrap gap-5">
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+        <Link
+          href="/projects"
+          className="bg-[#F57C00] hover:bg-orange-600 transition px-8 py-4 rounded-full text-white font-semibold flex items-center gap-2"
+        >
+          View Projects
+          <ArrowRight size={20} />
+        </Link>
 
-              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
+        <Link
+          href="/contact"
+          className="border border-white hover:bg-white hover:text-black transition px-8 py-4 rounded-full text-white font-semibold"
+        >
+          Contact Us
+        </Link>
 
-                <h3 className="text-4xl font-bold text-[#F57C00]">
-                  250+
-                </h3>
+      </div>
 
-                <p className="text-white mt-2">
-                  Projects Completed
-                </p>
+      {/* Statistics */}
 
-              </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
 
-              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
+        <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
 
-                <h3 className="text-4xl font-bold text-[#F57C00]">
-                  12+
-                </h3>
+          <h3 className="text-4xl font-bold text-[#F57C00]">
+            250+
+          </h3>
 
-                <p className="text-white mt-2">
-                  Years Experience
-                </p>
-
-              </div>
-
-              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
-
-                <h3 className="text-4xl font-bold text-[#F57C00]">
-                  100%
-                </h3>
-
-                <p className="text-white mt-2">
-                  Quality Assurance
-                </p>
-
-              </div>
-
-              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
-
-                <h3 className="text-4xl font-bold text-[#F57C00]">
-                  24/7
-                </h3>
-
-                <p className="text-white mt-2">
-                  Client Support
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
+          <p className="text-white mt-2">
+            Projects Completed
+          </p>
 
         </div>
+
+        <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
+
+          <h3 className="text-4xl font-bold text-[#F57C00]">
+            25+
+          </h3>
+
+          <p className="text-white mt-2">
+            Years Experience
+          </p>
+
+        </div>
+
+        <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
+
+          <h3 className="text-4xl font-bold text-[#F57C00]">
+            100%
+          </h3>
+
+          <p className="text-white mt-2">
+            Quality Assurance
+          </p>
+
+        </div>
+
+        <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
+
+          <h3 className="text-4xl font-bold text-[#F57C00]">
+            24/7
+          </h3>
+
+          <p className="text-white mt-2">
+            Client Support
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* ================= RIGHT BIG TRANSPARENT LOGO ================= */}
+
+    <div className="hidden lg:flex justify-center items-center relative">
+
+      <div className="absolute w-[600px] h-[600px] rounded-full bg-[#F57C00]/10 blur-3xl animate-pulse"></div>
+
+      <img
+        src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_000000008b7482089b081bbdce860ea8.png"
+        alt="Axis Infra Design Team"
+        className="relative w-[520px] xl:w-[650px] opacity-90 drop-shadow-[0_0_40px_rgba(245,124,0,0.35)] animate-float-logo"
+      />
+
+    </div>
+
+  </div>
+
+</div>
 
       </section>
 
