@@ -1,126 +1,273 @@
+
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ArrowRight } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  Clock3,
+  Menu,
+  ArrowRight,
+} from "lucide-react";
 
-export default function Header() {
-  const [open, setOpen] = useState(false);
-
-  const menu = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/about" },
-    { name: "Architecture", link: "/architecture" },
-    { name: "Services", link: "/services" },
-    { name: "Projects", link: "/projects" },
-    { name: "Founder", link: "/founder" },
-    { name: "Contact", link: "/contact" },
-  ];
-
+export default function Home() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50">
+    <main className="bg-white">
 
-      <div className="max-w-7xl mx-auto px-5 py-5">
+      {/* ================= TOP BAR ================= */}
 
-        <div className="bg-black/35 backdrop-blur-xl border border-white/10 rounded-full shadow-xl">
+      <div className="bg-[#F57C00] text-white text-sm">
+        <div className="max-w-7xl mx-auto px-6 py-2 flex flex-wrap items-center justify-between gap-4">
 
-          <div className="flex items-center justify-between px-8 py-4">
+          <div className="flex flex-wrap items-center gap-6">
 
-            {/* Logo */}
+            <div className="flex items-center gap-2">
+              <Clock3 size={16} />
+              <span>Mon - Sat : 9:00 AM - 6:30 PM</span>
+            </div>
 
-            <Link href="/" className="flex items-center">
+            <div className="flex items-center gap-2">
+              <Mail size={16} />
+              <span>info@axisinfra.com</span>
+            </div>
 
-              <img
-                src="https://axisinfradesignteam.com/wp-content/uploads/2026/07/1_20260710_121127_0000.png"
-                alt="Axis Infra"
-                className="h-14 w-auto"
-              />
+          </div>
 
-            </Link>
+          <div className="flex items-center gap-2">
+            <Phone size={16} />
+            <span className="font-semibold">
+              +91 98765 43210
+            </span>
+          </div>
 
-            {/* Desktop Menu */}
+        </div>
+      </div>
 
-            <nav className="hidden lg:flex items-center gap-9 text-white font-medium">
+      {/* ================= HERO SECTION ================= */}
 
-              {menu.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.link}
-                  className="hover:text-[#F57C00] transition duration-300"
-                >
-                  {item.name}
+      <section
+        className="relative min-h-screen bg-cover bg-center pt-36"
+        style={{
+          backgroundImage:
+            "url('https://axisinfradesignteam.com/wp-content/uploads/2026/07/Blog-Banner-for-Website-Content_20260710_105446_0000.png')",
+        }}
+      >
+        {/* Overlay */}
+
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* ================= HEADER ================= */}
+
+        <header className="fixed top-0 left-0 w-full z-[100]">
+
+          <div className="max-w-7xl mx-auto px-6 pt-6">
+
+            <div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-full shadow-xl">
+
+              <div className="flex items-center justify-between px-10 py-5">
+
+                {/* LOGO */}
+
+                <Link href="/" className="flex items-center">
+
+                  <img
+                    src="https://axisinfradesignteam.com/wp-content/uploads/2026/07/1_20260710_121127_0000.png"
+                    alt="Axis Infra"
+                    className="h-14 w-auto"
+                  />
+
                 </Link>
-              ))}
 
-            </nav>
+                {/* DESKTOP MENU */}
 
-            {/* Desktop Button */}
+                <nav className="hidden lg:flex items-center gap-10 text-white text-[16px] font-semibold">
 
-            <div className="hidden lg:block">
+                  <Link
+                    href="/"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Home
+                  </Link>
+
+                  <Link
+                    href="/about"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    About
+                  </Link>
+
+                  <Link
+                    href="/architecture"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Architecture
+                  </Link>
+
+                  <Link
+                    href="/services"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Services
+                  </Link>
+
+                  <Link
+                    href="/projects"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Projects
+                  </Link>
+
+                  <Link
+                    href="/founder"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Founder
+                  </Link>
+
+                  <Link
+                    href="/contact"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Contact
+                  </Link>
+
+                </nav>
+
+                {/* RIGHT SIDE */}
+
+                <div className="flex items-center gap-4">
+
+                  <button className="hidden lg:flex bg-[#F57C00] hover:bg-orange-600 transition px-6 py-3 rounded-full font-semibold text-white items-center gap-2">
+
+                    Get Quote
+
+                    <ArrowRight size={18} />
+
+                  </button>
+
+                  {/* MOBILE MENU */}
+
+                  <button className="lg:hidden text-white">
+
+                    <Menu size={30} />
+
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </header>
+
+        {/* ================= HERO CONTENT STARTS HERE ================= */}
+
+        <div className="relative z-20 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
+          
+                          <div className="max-w-3xl">
+
+            <span className="inline-block bg-[#F57C00]/20 border border-[#F57C00] text-[#F57C00] px-5 py-2 rounded-full text-sm font-semibold tracking-widest uppercase">
+              Axis Infra Design Team
+            </span>
+
+            <h1 className="mt-8 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white">
+              Building Spaces
+              <br />
+              That Inspire
+            </h1>
+
+            <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-[#F57C00]">
+              Architecture • Interiors • Construction
+            </h2>
+
+            <p className="mt-8 text-lg text-gray-200 leading-8 max-w-2xl">
+              We design premium residential, commercial and luxury interior
+              spaces with innovative architecture, quality construction and
+              timeless aesthetics. Every project is crafted with precision,
+              creativity and excellence.
+            </p>
+
+            <div className="mt-10 flex flex-wrap gap-5">
+
+              <Link
+                href="/projects"
+                className="bg-[#F57C00] hover:bg-orange-600 transition px-8 py-4 rounded-full text-white font-semibold flex items-center gap-2"
+              >
+                View Projects
+                <ArrowRight size={20} />
+              </Link>
 
               <Link
                 href="/contact"
-                className="bg-[#F57C00] hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition"
+                className="border border-white hover:bg-white hover:text-black transition px-8 py-4 rounded-full text-white font-semibold"
               >
-                Get Quote
-                <ArrowRight size={18} />
+                Contact Us
               </Link>
 
             </div>
 
-            {/* Mobile Button */}
+            {/* Statistics */}
 
-            <button
-              onClick={() => setOpen(!open)}
-              className="lg:hidden text-white"
-            >
-              {open ? <X size={30} /> : <Menu size={30} />}
-            </button>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+
+              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
+
+                <h3 className="text-4xl font-bold text-[#F57C00]">
+                  250+
+                </h3>
+
+                <p className="text-white mt-2">
+                  Projects Completed
+                </p>
+
+              </div>
+
+              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
+
+                <h3 className="text-4xl font-bold text-[#F57C00]">
+                  12+
+                </h3>
+
+                <p className="text-white mt-2">
+                  Years Experience
+                </p>
+
+              </div>
+
+              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
+
+                <h3 className="text-4xl font-bold text-[#F57C00]">
+                  100%
+                </h3>
+
+                <p className="text-white mt-2">
+                  Quality Assurance
+                </p>
+
+              </div>
+
+              <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
+
+                <h3 className="text-4xl font-bold text-[#F57C00]">
+                  24/7
+                </h3>
+
+                <p className="text-white mt-2">
+                  Client Support
+                </p>
+
+              </div>
+
+            </div>
 
           </div>
 
         </div>
 
-      </div>
-
-      {/* Mobile Menu */}
-
-      {open && (
-
-        <div className="lg:hidden mx-5 mt-2 rounded-3xl bg-black/95 backdrop-blur-xl border border-white/10 overflow-hidden">
-
-          <nav className="flex flex-col">
-
-            {menu.map((item) => (
-
-              <Link
-                key={item.name}
-                href={item.link}
-                onClick={() => setOpen(false)}
-                className="px-6 py-5 text-white border-b border-white/10 hover:bg-[#F57C00] transition"
-              >
-                {item.name}
-              </Link>
-
-            ))}
-
-            <Link
-              href="/contact"
-              onClick={() => setOpen(false)}
-              className="m-5 bg-[#F57C00] text-white rounded-full py-4 text-center font-semibold"
-            >
-              Get Quote
-            </Link>
-
-          </nav>
-
-        </div>
-
-      )}
-
-    </header>
-  );
-}
+      </section>
 
       {/* ================= ABOUT US STARTS HERE ================= */}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
