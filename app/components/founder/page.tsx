@@ -6,6 +6,15 @@ import {
   Award,
   Building2,
 } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  Clock3,
+  Menu,
+  ArrowRight,
+  Award,
+  Building2,
+} from "lucide-react";
 
 // ================= IMAGES =================
 
