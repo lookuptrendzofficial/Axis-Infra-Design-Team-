@@ -70,11 +70,9 @@ export default function Home() {
                     About
                   </Link>
 
-                  <Link
-                    href="/architecture"
-                    className="hover:text-[#F57C00] transition"
-                  >
-                    Architecture
+  
+              
+        
                   </Link>
 
                   <Link
@@ -229,17 +227,7 @@ export default function Home() {
 
         </div>
 
-        <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6">
-
-          <h3 className="text-4xl font-bold text-[#F57C00]">
-            24/7
-          </h3>
-
-          <p className="text-white mt-2">
-            Client Support
-          </p>
-
-        </div>
+    
 
       </div>
 
@@ -252,7 +240,7 @@ export default function Home() {
       <div className="absolute w-[600px] h-[600px] rounded-full bg-[#F57C00]/10 blur-3xl animate-pulse"></div>
 
       <img
-        src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_000000008b7482089b081bbdce860ea8.png"
+        src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260721_134437_0000.png"
         alt="Axis Infra Design Team"
         className="relative w-[520px] xl:w-[650px] opacity-90 drop-shadow-[0_0_40px_rgba(245,124,0,0.35)] animate-float-logo"
       />
