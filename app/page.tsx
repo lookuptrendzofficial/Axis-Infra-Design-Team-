@@ -233,7 +233,7 @@ export default function Home() {
       <div className="absolute w-[600px] h-[600px] rounded-full bg-[#F57C00]/10 blur-3xl animate-pulse"></div>
 
       <img
-        src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260722_171319_0000.png"
+        src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260722_174026_0000.png"
         alt="Axis Infra Design Team"
         className="relative w-[520px] xl:w-[650px] opacity-90 drop-shadow-[0_0_40px_rgba(245,124,0,0.35)] animate-float-logo"
       />
