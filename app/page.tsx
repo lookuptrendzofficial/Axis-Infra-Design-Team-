@@ -233,7 +233,7 @@ export default function Home() {
       <div className="absolute w-[600px] h-[600px] rounded-full bg-[#F57C00]/10 blur-3xl animate-pulse"></div>
 
       <img
-        src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_000000008b7482089b081bbdce860ea8.png"
+        src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260722_171319_0000.png"
         alt="Axis Infra Design Team"
         className="relative w-[520px] xl:w-[650px] opacity-90 drop-shadow-[0_0_40px_rgba(245,124,0,0.35)] animate-float-logo"
       />
@@ -417,7 +417,7 @@ export default function Home() {
 
     <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 border border-gray-100">
 
-      <img src="ICON_LINK_1" className="w-16 h-16 mb-6" alt="" />
+      <img src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/5_20260722_172137_0000.png" className="w-16 h-16 mb-6" alt="" />
 
       <h3 className="text-2xl font-bold text-gray-900 mb-4">
         Online Building Plan Approvals
@@ -520,7 +520,7 @@ export default function Home() {
 
     <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 border border-gray-100">
 
-      <img src="ICON_LINK_7" className="w-16 h-16 mb-6" alt="" />
+      <img src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260722_172304_0000.png" className="w-16 h-16 mb-6" alt="" />
 
       <h3 className="text-2xl font-bold text-gray-900 mb-4">
         Transferable Development Rights (TDR)
