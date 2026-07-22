@@ -70,11 +70,6 @@ export default function Home() {
                     About
                   </Link>
 
-  
-              
-        
-                  </Link>
-
                   <Link
                     href="/services"
                     className="hover:text-[#F57C00] transition"
@@ -227,8 +222,6 @@ export default function Home() {
 
         </div>
 
-    
-
       </div>
 
     </div>
@@ -240,7 +233,7 @@ export default function Home() {
       <div className="absolute w-[600px] h-[600px] rounded-full bg-[#F57C00]/10 blur-3xl animate-pulse"></div>
 
       <img
-        src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260721_134437_0000.png"
+        src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_000000008b7482089b081bbdce860ea8.png"
         alt="Axis Infra Design Team"
         className="relative w-[520px] xl:w-[650px] opacity-90 drop-shadow-[0_0_40px_rgba(245,124,0,0.35)] animate-float-logo"
       />
