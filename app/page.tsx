@@ -461,7 +461,7 @@ export default function Home() {
         <div className="mb-10">
 
           <img
-            src="ICON_LINK_2"
+            src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_00000000f2188208a2645be80e9af084.png"
             alt="Architectural Design"
             className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
           />
@@ -653,7 +653,7 @@ export default function Home() {
         <div className="mb-10">
 
           <img
-            src="ICON_LINK_8"
+            src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_00000000521481fab6a16f620e9d62d8.png"
             alt="STP"
             className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
           />
