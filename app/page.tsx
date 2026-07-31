@@ -388,201 +388,341 @@ export default function Home() {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     </section>
            {/* ================= OUR SERVICES ================= */}
 
-<section className="py-24 bg-[#fafafa]">
+{/* ================= OUR SERVICES ================= */}
 
-<div className="max-w-7xl mx-auto px-6">
+<section className="py-28 bg-[#fafafa]">
 
-  <div className="text-center mb-16">
+  <div className="max-w-7xl mx-auto px-6">
 
-    <p className="uppercase tracking-[5px] text-[#F57C00] font-semibold">
-      WHAT WE OFFER
-    </p>
+    {/* Heading */}
 
-    <h2 className="text-5xl font-bold text-gray-900 mt-3">
-      Our Services
-    </h2>
+    <div className="text-center mb-20">
 
-    <div className="w-24 h-1 bg-[#F57C00] mx-auto rounded-full mt-5 mb-6"></div>
+      <p className="uppercase tracking-[6px] text-[#F57C00] font-bold">
+        WHAT WE OFFER
+      </p>
 
-    <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-      Comprehensive engineering, architectural and approval solutions for
-      residential, commercial and industrial developments.
-    </p>
+      <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mt-4">
+        Our Services
+      </h2>
+
+      <div className="w-28 h-1.5 bg-[#F57C00] mx-auto rounded-full mt-6 mb-8"></div>
+
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-9">
+        Comprehensive engineering, architectural and approval solutions
+        for residential, commercial and industrial developments.
+      </p>
+
+    </div>
+
+    <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-10">
+
+      {/* ================= Card 1 ================= */}
+
+      <div className="group bg-white rounded-[35px] p-12 min-h-[600px] flex flex-col items-center text-center border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+
+        <div className="mb-10">
+
+          <img
+            src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/5_20260722_172137_0000.png"
+            alt="Online Building Plan Approvals"
+            className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
+          />
+
+        </div>
+
+        <h3 className="text-[32px] font-bold text-gray-900 leading-tight mb-6">
+
+          Online Building
+          <br />
+          Plan Approvals
+
+        </h3>
+
+        <p className="text-[18px] text-gray-600 leading-9">
+
+          Complete building plan approval services for all
+          types of projects from
+
+          <strong className="text-gray-900">
+            {" "}GVMC, VMRDA, VK-PCPIR
+          </strong>
+
+          {" "}and other local authorities.
+
+        </p>
+
+      </div>
+
+      {/* ================= Card 2 ================= */}
+
+      <div className="group bg-white rounded-[35px] p-12 min-h-[600px] flex flex-col items-center text-center border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+
+        <div className="mb-10">
+
+          <img
+            src="ICON_LINK_2"
+            alt="Architectural Design"
+            className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
+          />
+
+        </div>
+
+        <h3 className="text-[32px] font-bold text-gray-900 leading-tight mb-6">
+
+          Architectural
+          <br />
+          Design
+
+        </h3>
+
+        <p className="text-[18px] text-gray-600 leading-9">
+
+          Creative, functional and Vastu-compliant
+          architectural designs tailored to your vision
+          and project requirements.
+
+        </p>
+
+      </div>
+            {/* ================= Card 3 ================= */}
+
+      <div className="group bg-white rounded-[35px] p-12 min-h-[600px] flex flex-col items-center text-center border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+
+        <div className="mb-10">
+
+          <img
+            src="ICON_LINK_3"
+            alt="Structural Design"
+            className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
+          />
+
+        </div>
+
+        <h3 className="text-[32px] font-bold text-gray-900 leading-tight mb-6">
+
+          Structural
+          <br />
+          Design
+
+        </h3>
+
+        <p className="text-[18px] text-gray-600 leading-9">
+
+          Safe, durable and cost-effective structural engineering
+          solutions for residential, commercial and industrial
+          buildings.
+
+        </p>
+
+      </div>
+
+      {/* ================= Card 4 ================= */}
+
+      <div className="group bg-white rounded-[35px] p-12 min-h-[600px] flex flex-col items-center text-center border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+
+        <div className="mb-10">
+
+          <img
+            src="ICON_LINK_4"
+            alt="Fire & Safety Consultancy"
+            className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
+          />
+
+        </div>
+
+        <h3 className="text-[32px] font-bold text-gray-900 leading-tight mb-6">
+
+          Fire & Safety
+          <br />
+          Consultancy
+
+        </h3>
+
+        <p className="text-[18px] text-gray-600 leading-9">
+
+          Fire safety design, system planning, installation
+          guidance and Fire NOC approvals for residential,
+          commercial and industrial projects.
+
+        </p>
+
+      </div>
+
+      {/* ================= Card 5 ================= */}
+
+      <div className="group bg-white rounded-[35px] p-12 min-h-[600px] flex flex-col items-center text-center border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+
+        <div className="mb-10">
+
+          <img
+            src="ICON_LINK_5"
+            alt="Mixed Development"
+            className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
+          />
+
+        </div>
+
+        <h3 className="text-[32px] font-bold text-gray-900 leading-tight mb-6">
+
+          Mixed
+          <br />
+          Development
+
+        </h3>
+
+        <p className="text-[18px] text-gray-600 leading-9">
+
+          Planning, design and approval services for
+          mixed-use developments, integrated townships,
+          commercial complexes and high-rise projects.
+
+        </p>
+
+      </div>
+            {/* ================= Card 6 ================= */}
+
+      <div className="group bg-white rounded-[35px] p-12 min-h-[600px] flex flex-col items-center text-center border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+
+        <div className="mb-10">
+
+          <img
+            src="ICON_LINK_6"
+            alt="CRZ Clearance"
+            className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
+          />
+
+        </div>
+
+        <h3 className="text-[32px] font-bold text-gray-900 leading-tight mb-6">
+
+          CRZ Clearance
+          <br />
+          (NOC)
+
+        </h3>
+
+        <p className="text-[18px] text-gray-600 leading-9">
+
+          Professional assistance in obtaining Coastal
+          Regulation Zone (CRZ) approvals while ensuring
+          complete compliance with environmental regulations.
+
+        </p>
+
+      </div>
+
+      {/* ================= Card 7 ================= */}
+
+      <div className="group bg-white rounded-[35px] p-12 min-h-[600px] flex flex-col items-center text-center border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+
+        <div className="mb-10">
+
+          <img
+            src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260722_172304_0000.png"
+            alt="Transferable Development Rights"
+            className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
+          />
+
+        </div>
+
+        <h3 className="text-[30px] font-bold text-gray-900 leading-tight mb-6">
+
+          Transferable
+          <br />
+          Development Rights
+          <br />
+          (TDR)
+
+        </h3>
+
+        <p className="text-[18px] text-gray-600 leading-9">
+
+          Complete consultancy for TDR applications,
+          bond processing, documentation, purchase,
+          transfer and approval services.
+
+        </p>
+
+      </div>
+
+      {/* ================= Card 8 ================= */}
+
+      <div className="group bg-white rounded-[35px] p-12 min-h-[600px] flex flex-col items-center text-center border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+
+        <div className="mb-10">
+
+          <img
+            src="ICON_LINK_8"
+            alt="STP"
+            className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
+          />
+
+        </div>
+
+        <h3 className="text-[30px] font-bold text-gray-900 leading-tight mb-6">
+
+          STP
+          <br />
+          Sewage Treatment
+          <br />
+          Plant
+
+        </h3>
+
+        <p className="text-[18px] text-gray-600 leading-9">
+
+          Planning, design and consultancy for
+          Sewage Treatment Plants with efficient
+          wastewater treatment and environmental
+          compliance.
+
+        </p>
+
+      </div>
+
+    </div>
 
   </div>
-
-  <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-8">
-
-    {/* Card 1 */}
-
-    <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 border border-gray-100">
-
-      <img src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/5_20260722_172137_0000.png" className="w-16 h-16 mb-6" alt="" />
-
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        Online Building Plan Approvals
-      </h3>
-
-      <p className="text-gray-600 leading-8">
-        Complete building plan approval services for all types of projects
-        from <strong>GVMC, VMRDA, VK-PCPIR</strong> and other local
-        authorities.
-      </p>
-
-    </div>
-
-    {/* Card 2 */}
-
-    <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 border border-gray-100">
-
-      <img src="ICON_LINK_2" className="w-16 h-16 mb-6" alt="" />
-
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        Architectural Design
-      </h3>
-
-      <p className="text-gray-600 leading-8">
-        Creative, functional and Vastu-compliant architectural designs
-        tailored to your vision and project requirements.
-      </p>
-
-    </div>
-
-    {/* Card 3 */}
-
-    <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 border border-gray-100">
-
-      <img src="ICON_LINK_3" className="w-16 h-16 mb-6" alt="" />
-
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        Structural Design
-      </h3>
-
-      <p className="text-gray-600 leading-8">
-        Safe, durable and cost-effective structural engineering solutions
-        for residential, commercial and industrial buildings.
-      </p>
-
-    </div>
-
-    {/* Card 4 */}
-
-    <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 border border-gray-100">
-
-      <img src="ICON_LINK_4" className="w-16 h-16 mb-6" alt="" />
-
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        Fire & Safety Consultancy
-      </h3>
-
-      <p className="text-gray-600 leading-8">
-        Fire safety design, system planning, installation guidance and Fire
-        NOC approvals for all types of buildings.
-      </p>
-
-    </div>
-
-    {/* Card 5 */}
-
-    <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 border border-gray-100">
-
-      <img src="ICON_LINK_5" className="w-16 h-16 mb-6" alt="" />
-
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        Mixed Development
-      </h3>
-
-      <p className="text-gray-600 leading-8">
-        Planning, design and approval services for mixed-use developments,
-        townships and high-rise residential & commercial buildings.
-      </p>
-
-    </div>
-
-    {/* Card 6 */}
-
-    <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 border border-gray-100">
-
-      <img src="ICON_LINK_6" className="w-16 h-16 mb-6" alt="" />
-
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        CRZ Clearance (NOC)
-      </h3>
-
-      <p className="text-gray-600 leading-8">
-        Professional assistance in obtaining CRZ (Coastal Regulation Zone)
-        NOC approvals within applicable coastal regulations.
-      </p>
-
-    </div>
-
-    {/* Card 7 */}
-
-    <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 border border-gray-100">
-
-      <img src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260722_172304_0000.png" className="w-16 h-16 mb-6" alt="" />
-
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        Transferable Development Rights (TDR)
-      </h3>
-
-      <p className="text-gray-600 leading-8">
-        End-to-end assistance for TDR applications, bond processing, sales
-        and purchase documentation.
-      </p>
-
-    </div>
-
-    {/* Card 8 */}
-
-    <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 border border-gray-100">
-
-      <img src="ICON_LINK_8" className="w-16 h-16 mb-6" alt="" />
-
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        STP (Sewage Treatment Plant)
-      </h3>
-
-      <p className="text-gray-600 leading-8">
-        Design and consultancy for Sewage Treatment Plants (STP), ensuring
-        efficient wastewater treatment and environmental compliance.
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
 
 </section>
-                {/* View All Services Button */}
+      {/* ================= VIEW ALL SERVICES ================= */}
 
-<div className="flex justify-center mt-16">
+<section className="pb-28 bg-[#fafafa]">
 
-<a
-  href="/services"
-  className="inline-flex items-center gap-3 bg-[#F57C00] hover:bg-orange-600 text-white font-semibold px-10 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
->
-  View All Services
+  <div className="flex justify-center">
 
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="w-5 h-5"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    strokeWidth={2}
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M9 5l7 7-7 7"
-    />
-  </svg>
+    <a
+      href="/services"
+      className="group relative inline-flex items-center gap-4 overflow-hidden rounded-full bg-[#F57C00] px-12 py-5 text-xl font-bold text-white shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(245,124,0,0.35)]"
+    >
+      <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full"></span>
 
-</a>
+      <span className="relative z-10">
+        View All Services
+      </span>
 
-</div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="relative z-10 h-6 w-6 transition-transform duration-300 group-hover:translate-x-2"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2.5}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+
+    </a>
+
+  </div>
+
+</section>
+ 
 {/* ================= WHY CHOOSE US ================= */}
 
 <section className="py-24 bg-white">
