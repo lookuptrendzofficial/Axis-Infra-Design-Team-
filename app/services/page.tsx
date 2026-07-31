@@ -350,7 +350,7 @@ export default function ServicesPage() {
             <div>
 
               <img
-                src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_00000000f2188208a2645be80e9af084.png"
+                src="ICON_LINK_2"
                 alt="Architectural Design"
                 className="w-80 mx-auto"
               />
@@ -373,7 +373,7 @@ export default function ServicesPage() {
             <div>
 
               <img
-                src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/5_20260722_172137_0000.png"
+                src="ICON_LINK_3"
                 alt="Structural Design"
                 className="w-80 mx-auto"
               />
@@ -535,7 +535,7 @@ export default function ServicesPage() {
             <div>
 
               <img
-                src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/9_20260722_172137_0004.png"
+                src="ICON_LINK_4"
                 alt="Fire & Safety Consultancy"
                 className="w-80 mx-auto"
               />
@@ -558,7 +558,7 @@ export default function ServicesPage() {
             <div>
 
               <img
-                src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/8_20260722_172137_0003.png"
+                src="ICON_LINK_5"
                 alt="Mixed Development"
                 className="w-80 mx-auto"
               />
@@ -720,7 +720,7 @@ export default function ServicesPage() {
             <div>
 
               <img
-                src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/10_20260722_172137_0005.png"
+                src="ICON_LINK_6"
                 alt="CRZ Clearance"
                 className="w-80 mx-auto"
               />
@@ -905,7 +905,7 @@ export default function ServicesPage() {
             <div>
 
               <img
-                src=https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_00000000521481fab6a16f620e9d62d8.png"
+                src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260722_172304_0000.png"
                 alt="STP"
                 className="w-80 mx-auto"
               />
