@@ -1,172 +1,134 @@
+
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-
 import {
   Phone,
   Mail,
   Clock3,
   Menu,
-  X,
   ArrowRight,
 } from "lucide-react";
 
 export default function Home() {
-
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-
     <main className="bg-white">
 
-      {/* ================= HEADER ================= */}
+      {/* ================= TOP BAR ================= */}
 
-      <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
 
-        <div className="max-w-7xl mx-auto px-6">
+      {/* ================= HERO SECTION ================= */}
 
-          <div className="flex items-center justify-between h-24">
+      <section
+        className="relative min-h-screen bg-cover bg-center pt-36"
+        style={{
+          backgroundImage:
+            "url('https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/file_00000000cae87208a5c541bdaced9bac.png')",
+        }}
+      >
+        {/* Overlay */}
 
-            {/* ================= LOGO ================= */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-            <Link href="/" className="flex items-center">
+        {/* ================= HEADER ================= */}
 
-              <img
-                src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260721_134437_0000.png"
-                alt="Axis Design Team"
-                className="h-16 w-auto"
-              />
+        <header className="fixed top-0 left-0 w-full z-[100]">
 
-            </Link>
+          <div className="max-w-7xl mx-auto px-6 pt-6">
 
-            {/* ================= DESKTOP MENU ================= */}
+            <div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-full shadow-xl">
 
-            <nav className="hidden lg:flex items-center gap-10">
+              <div className="flex items-center justify-between px-10 py-5">
 
-              <Link
-                href="/about"
-                className="font-medium text-gray-800 hover:text-[#F57C00] transition"
-              >
-                About
-              </Link>
+                {/* LOGO */}
 
-              <Link
-                href="/founder"
-                className="font-medium text-gray-800 hover:text-[#F57C00] transition"
-              >
-                Founder
-              </Link>
+                <Link href="/" className="flex items-center">
 
-              <Link
-                href="/services"
-                className="font-medium text-gray-800 hover:text-[#F57C00] transition"
-              >
-                Services
-              </Link>
+                  <img
+                    src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260721_134437_0000.png"
+                    alt="Axis Infra"
+                    className="h-14 w-auto"
+                  />
 
-              <Link
-                href="/contact"
-                className="font-medium text-gray-800 hover:text-[#F57C00] transition"
-              >
-                Contact Us
-              </Link>
+                </Link>
 
-            </nav>
+                {/* DESKTOP MENU */}
 
-            {/* ================= RIGHT SIDE ================= */}
+                <nav className="hidden lg:flex items-center gap-10 text-white text-[16px] font-semibold">
 
-            <div className="flex items-center gap-4">
+                  <Link
+                    href="/"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Home
+                  </Link>
 
-              <Link
-                href="/contact"
-                className="hidden lg:flex items-center gap-2 bg-[#F57C00] hover:bg-orange-600 text-white px-7 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
-              >
-                Get Quote
-                <ArrowRight size={18} />
-              </Link>
-                    {/* ================= MOBILE MENU ================= */}
+                  <Link
+                    href="/about"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    About
+                  </Link>
 
-      {menuOpen && (
-        <div className="fixed inset-0 z-[999] bg-white lg:hidden">
+                  <Link
+                    href="/services"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Services
+                  </Link>
 
-          {/* Top */}
+                  <Link
+                    href="/projects"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Projects
+                  </Link>
 
-          <div className="flex items-center justify-between px-6 h-24 border-b">
+                  <Link
+                    href="/founder"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Founder
+                  </Link>
 
-            <Link
-              href="/"
-              onClick={() => setMenuOpen(false)}
-            >
-              <img
-                src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/Ishanvi-logo_20260721_134437_0000.png"
-                alt="Axis Design Team"
-                className="h-14 w-auto"
-              />
-            </Link>
+                  <Link
+                    href="/contact"
+                    className="hover:text-[#F57C00] transition"
+                  >
+                    Contact
+                  </Link>
 
-            <button
-              onClick={() => setMenuOpen(false)}
-              className="text-gray-800"
-            >
-              <X size={30} />
-            </button>
+                </nav>
+
+                {/* RIGHT SIDE */}
+
+                <div className="flex items-center gap-4">
+
+                  <button className="hidden lg:flex bg-[#F57C00] hover:bg-orange-600 transition px-6 py-3 rounded-full font-semibold text-white items-center gap-2">
+
+                    Get Quote
+
+                    <ArrowRight size={18} />
+
+                  </button>
+
+                  {/* MOBILE MENU */}
+
+                  <button className="lg:hidden text-white">
+
+                    <Menu size={30} />
+
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
 
           </div>
 
-          {/* Menu */}
-
-          <nav className="flex flex-col px-8 py-10">
-
-            <Link
-              href="/about"
-              onClick={() => setMenuOpen(false)}
-              className="py-5 text-xl font-semibold text-gray-800 border-b border-gray-100 hover:text-[#F57C00]"
-            >
-              About
-            </Link>
-
-            <Link
-              href="/founder"
-              onClick={() => setMenuOpen(false)}
-              className="py-5 text-xl font-semibold text-gray-800 border-b border-gray-100 hover:text-[#F57C00]"
-            >
-              Founder
-            </Link>
-
-            <Link
-              href="/services"
-              onClick={() => setMenuOpen(false)}
-              className="py-5 text-xl font-semibold text-gray-800 border-b border-gray-100 hover:text-[#F57C00]"
-            >
-              Services
-            </Link>
-
-            <Link
-              href="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="py-5 text-xl font-semibold text-gray-800 border-b border-gray-100 hover:text-[#F57C00]"
-            >
-              Contact Us
-            </Link>
-
-            <Link
-              href="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="mt-10 flex items-center justify-center gap-2 bg-[#F57C00] hover:bg-orange-600 text-white py-4 rounded-full font-semibold transition"
-            >
-              Get Quote
-              <ArrowRight size={18} />
-            </Link>
-
-          </nav>
-
-        </div>
-      )}
-
-      {/* ================= HERO SECTION STARTS HERE ================= */}
-  
-
+        </header>
 
         {/* ================= HERO CONTENT STARTS HERE ================= */}
 
@@ -530,7 +492,7 @@ export default function Home() {
         <div className="mb-10">
 
           <img
-            src="ICON_LINK_3"
+            src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/5_20260722_172137_0000.png"
             alt="Structural Design"
             className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
           />
@@ -562,7 +524,7 @@ export default function Home() {
         <div className="mb-10">
 
           <img
-            src="ICON_LINK_4"
+            src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/9_20260722_172137_0004.png"
             alt="Fire & Safety Consultancy"
             className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
           />
@@ -594,7 +556,7 @@ export default function Home() {
         <div className="mb-10">
 
           <img
-            src="ICON_LINK_5"
+            src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/8_20260722_172137_0003.png"
             alt="Mixed Development"
             className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
           />
@@ -625,7 +587,7 @@ export default function Home() {
         <div className="mb-10">
 
           <img
-            src="ICON_LINK_6"
+            src="https://businessprideawards.lookuptrendz.com/wp-content/uploads/2026/07/10_20260722_172137_0005.png"
             alt="CRZ Clearance"
             className="w-40 h-40 object-contain transition-all duration-500 group-hover:scale-110"
           />
